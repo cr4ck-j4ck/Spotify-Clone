@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 0px 2rem;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-options {
+    line-height: 2.5rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-options:hover {
+    opacity: 1;
+}
+
+.nav-options i {
+    font-size: 1.25rem;
+}
+
+.nav-options a {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-options img {
+    height: 1.5rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+}
+
+.icons i {
+    opacity: 0.6;
+    transition: 0.3s;
+    padding: 0.6rem;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.icons i:hover {
+    background-color: #1E1E1E;
+    opacity: 1;
+}
+
+.box {
+    background-color: #1F1F1F;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem 2rem;
+    padding: 0.5rem 1rem 1.5rem;
+}
+
+.badge {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    transition: 0.2s;
+    border: none;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.badge:hover {
+    transform: scale(1.03);
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    z-index: 2
+}
+
+.nav-second-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-items {
+    margin-left: 1.2rem;
+}
+
+.user-bg {
+    background-color: black;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: 1rem 0rem 0rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+.user-bg i {
+    margin-left: 0.7rem;
+    margin-top: 0.6rem;
+}
+
+.pnt {
+    cursor: pointer;
+}
+
+.dark-badge {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card {
+    /* width: 200px; */
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    max-width: 16rem;
+    min-width: 13rem;
+    flex: 1 1 10rem;
+}
+
+.card:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.card:hover>.pop-up {
+    visibility: visible;
+    animation: pop-up 0.3s ease-in-out forwards;
+
+}
+
+.pop-up {
+    background-color: #3BE477;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    bottom: 8rem;
+    right: 3rem;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+
+.pop-up i {
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+@keyframes pop-up {
+    from {
+        transform: translateY(0);
+        /* Start at the current position */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-0.5rem);
+        /* Moves the pop-up slightly upwards */
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-family: "Poppins";
+    font-weight: 500;
+    margin: 0px;
+}
+
+.card-info {
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+.player-controls-icons {
+    height: 1.2rem;
+    opacity: 0.7;
+    margin-right: 3rem;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.player-controls-icons:hover {
+    opacity: 1;
+}
+
+.play {
+    height: 2.6rem;
+    transition: 0.2s;
+}
+
+.play:hover {
+    transform: scale(1.05);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    width: 50%;
+    appearance: none;
+    background-color: transparent;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 10000000px;
+    height: 0.20rem;
+
+}
+
+.progress-bar::-webkit-slider-thumb {
+    margin-top: -7px;
+    padding: 0.6rem;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #3BE477;
+    border-radius: 50%;
+}
+

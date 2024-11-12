@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-options">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus pnt"></i>
+                        <i class="fa-solid fa-arrow-right pnt"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge pnt">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge pnt">Browse posdcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="nav-first-icons">
+                    <img class="pnt" src="./assets/backward_icon.png" alt="">
+                    <img class="pnt hide" src="./assets/forward_icon.png" alt="">
+                </div>
+                <div class="nav-second-icons">
+                    <button class="badge nav-items pnt hide">Explore Permium</button>
+                    <button class="dark-badge badge nav-items pnt"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 0.5rem;"></i>Install App</button>
+                    <div class="user-bg">
+                        <i class="fa-regular fa-user pnt"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/yjhd.png" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">You daily updates of the most played tracks</p>
+                    <div class="pop-up"><i class="fa-solid fa-play"></i></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" alt="" class="player-controls-icons">
+                    <img src="./assets/player_icon2.png" alt="" class="player-controls-icons">
+                    <img src="./assets/player_icon3.png" alt="" class="player-controls-icons play" style="opacity:1;"">
+                    <img src="./assets/player_icon4.png" alt="" class="player-controls-icons">
+                    <img src="./assets/player_icon5.png" alt="" class="player-controls-icons">
+                </div>
+                <div class="playback-bar">
+                    <span class="current_time">0:00</span>
+                    <input type="range" step="1" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3:34</span>
+                </div>
+            </div>
+            <div class="controls"></div>
+        </div>
+</body>
+
+</html>
